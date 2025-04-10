@@ -2,6 +2,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: #f9f9f9;
+            padding: 10px;
+            z-index: 1000;
+            border-bottom: 1px solid #ccc;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #005EA2;
+            color: white;
+            padding: 10px 14px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+    <script>
+        window.onscroll = function() {
+            const btn = document.getElementById("backToTop");
+            if (document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Emerging Space Economy</title>
@@ -20,7 +60,7 @@
 <body>
     <h1>The Emerging Space Economy</h1>
     <p><em>AI, Commercialization, and Strategic Horizons</em></p>
-    <nav>
+    <nav class="sticky-nav">
         <a href="#section1">Executive Summary</a>
         <a href="#section2">Narrative & Insights</a>
         <a href="#section3">AI Products</a>
@@ -116,15 +156,16 @@
 <p>3. Shape Governance: Influence space law and standards to ensure fair and scalable development.</p>
 <p>4. Integrate Space into Strategic Planning: Treat space infrastructure as the next macroeconomic pillar alongside energy and internet.</p></section>
 <hr><h2>Interactive Charts</h2>
-<h3>Trajectory of Space Activity</h3>
+<h3 id="chart-trajectory-of-space-activity">Trajectory of Space Activity</h3>
 <iframe src="chart_trajectory.html" width="100%" height="500" frameborder="0"></iframe>
-<h3>AI Product Evolution Heatmap</h3>
+<h3 id="chart-ai-product-evolution-heatmap">AI Product Evolution Heatmap</h3>
 <iframe src="chart_ai_evolution.html" width="100%" height="500" frameborder="0"></iframe>
-<h3>Stacked Strategic Domains</h3>
+<h3 id="chart-stacked-strategic-domains">Stacked Strategic Domains</h3>
 <iframe src="chart_stacked_domains.html" width="100%" height="500" frameborder="0"></iframe>
-<h3>Zoomed Strategic Domain Focus</h3>
+<h3 id="chart-zoomed-strategic-domain-focus">Zoomed Strategic Domain Focus</h3>
 <iframe src="chart_zoomed_focus.html" width="100%" height="500" frameborder="0"></iframe>
-<h3>AI Product Investment Phases</h3>
+<h3 id="chart-ai-product-investment-phases">AI Product Investment Phases</h3>
 <iframe src="chart_ai_phases.html" width="100%" height="500" frameborder="0"></iframe>
+<button id="backToTop" class="back-to-top" onclick="scrollToTop()">Top</button>
 </body>
 </html>
