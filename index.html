@@ -1,116 +1,130 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>The Emerging Space Economy</title>
-<link href="assets/style.css" rel="stylesheet"/>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Emerging Space Economy</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 2rem; max-width: 800px; color: #222; }
+        h1, h2 { color: #005EA2; }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.4em; margin-top: 2rem; }
+        hr { border: none; border-top: 1px solid #ccc; margin: 2rem 0; }
+        nav { margin-bottom: 2rem; }
+        nav a { display: inline-block; margin-right: 15px; color: #0074D9; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        section { margin-bottom: 3rem; }
+    </style>
 </head>
 <body>
-<nav style="background-color:#003366; padding:10px 20px; text-align:center;">
-<a href="index.html" style="color:#fff; margin-right:20px; text-decoration:none; font-weight:bold;">Home</a>
-<a href="space_economy_dashboard.html" style="color:#fff; text-decoration:none; font-weight:bold;">Dashboard</a>
-</nav>
-<header>
-<h1>The Emerging Space Economy</h1>
-<section><p>AI, Commercialization, and Strategic Horizons</p></section>
-</header>
-<section>
-<h2 id="section-0">Comprehensive Briefing: The Emerging Space Economy</h2>
-<h3>1. Executive Summary</h3>
-<p>Space is entering a transformative era, shifting from a government-led domain to a commercially-driven frontier. Artificial Intelligence (AI) is accelerating this transition by enabling autonomous operations, lowering costs, and unlocking new business models. Between 2025 and 2060, critical AI technologies and strategic domains will reshape the economic landscape beyond Earth.</p>
-<h3>2. Foundational Mapping: Original Framework</h3>
-<p>The visual below represents the initial conceptual mapping of space activity transitioning from government to commercial leadership, alongside anticipated domain evolution—from satellite services and internet infrastructure to space mining and colonization.</p>
-</section>
-<main style="padding: 20px 5vw; max-width: 900px; margin: auto;"><nav style="background:#e8f0fa; padding:20px; text-align:left; font-size:16px; border-bottom: 1px solid #ccc;"><strong>Quick Navigation:</strong><a href="#section-0" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Comprehensive Briefing: The Emerging Space Economy</a><a href="#section-1" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Trajectory of Space Activity (1960–2100)</a><a href="#section-2" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">AI Product Evolution (2025–2050)</a><a href="#section-3" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Stacked Strategic Domains (2025–2100)</a><a href="#section-4" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Zoomed Strategic Domain Focus (2025–2060)</a><a href="#section-5" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Strategic Implications</a><a href="#section-6" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Next Steps and Recommendations</a><a href="#section-7" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Assumptions Behind the Original Space Activity Chart</a><a href="#section-8" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Strategic Insights</a><a href="#section-9" style="display:block; margin-top:5px; color:#004488; text-decoration:none;">Key Highlights by Era</a></nav>
-<h2 id="section-1">Trajectory of Space Activity (1960–2100)</h2>
-<p>The historical trajectory demonstrates a transition point in the late 2020s, where commercial activities surpass government-led missions, particularly accelerating from the 2040s onwards.</p>
-<div id="activity-chart" style="margin:30px 0;"></div>
-<h2 id="section-2">AI Product Evolution (2025–2050)</h2>
-<p>AI technologies are crucial for space market advancement, spanning autonomous operations, optimized launch logistics, surface and resource operations, and cognitive AI assistance. Each phase contributes to increasing commercial independence and capability.</p>
-<div id="ai-timeline" style="margin:30px 0;"></div>
-<h2 id="section-3">Stacked Strategic Domains (2025–2100)</h2>
-<p>This visualization illustrates how the domains evolve alongside the diminishing role of government-led activities and the rise of commercial capabilities, particularly highlighting the commercial acceleration post-2040.</p>
-<div id="stacked-chart" style="margin:30px 0;"></div>
-<h2 id="section-4">Zoomed Strategic Domain Focus (2025–2060)</h2>
-<p>Detailed focus on 2025–2060, illustrating critical growth periods across various strategic domains, emphasizing infrastructure development, AI-driven capabilities, and industrial expansions.</p>
-<div id="zoomed-chart" style="margin:30px 0;"></div>
-<h2 id="section-5">Strategic Implications</h2>
-<ul>
-<li>Emphasize AI-driven infrastructure investment.</li>
-<li>Shape favorable policy and legal environments.</li>
-<li>Invest with long-term perspectives (25+ year horizons).</li>
-<li>Ensure modular and autonomous design in space initiatives.</li>
-</ul>
-<h2 id="section-6">Next Steps and Recommendations</h2>
-<ul>
-<li>Develop simulation models to forecast different space economy scenarios.</li>
-<li>Conduct competitive analyses of commercial actors across strategic domains.</li>
-<li>Address policy and regulatory frameworks essential for enabling future growth.</li>
-<li>Integrate AI-driven roadmap into long-term strategic plans.</li>
-</ul>
-<h2 id="section-7">Assumptions Behind the Original Space Activity Chart</h2>
-<ul>
-<li>The 'Government Activity' line assumes a linear decline in public-led innovation and funding.</li>
-<li>The 'Commercial Activity' line assumes exponential growth from capital, innovation, and demand.</li>
-<li>Regulatory frameworks remain favorable to private sector expansion.</li>
-<li>Technological breakthroughs are paced through the 2030s and 2040s.</li>
-<li>Stable geopolitical and economic conditions persist through 2100.</li>
-</ul>
-<section>
-<h2 id="section-8">Strategic Insights</h2>
-<h3>1. Narrative</h3>
-<p>Space is following the same arc as the internet or railroads.</p>
-<ul>
-<li>Government seeds the field → commercial industry scales and diversifies.</li>
-</ul>
-<h3>2. We are at the “early broadband” phase of space right now.</h3>
-<p>Infrastructure is mostly built; commercialization is ramping. The next 10–15 years are key for platform creation, like SpaceX, Rocket Lab, or Starlink.</p>
-<h3>3. Mid-century monetization relies on solving critical bottlenecks:</h3>
-<ul>
-<li>Propellant transfer/refueling</li>
-<li>Launch cost drop (esp. beyond LEO)</li>
-<li>Long-term human habitation and return systems</li>
-<li>Legal frameworks for property rights and commerce beyond Earth</li>
-</ul>
-<h2 id="section-9">Key Highlights by Era</h2>
-<h3>2020s–2030s</h3>
-<ul>
-<li>Reusable launch systems mature</li>
-<li>Private satellite constellations (internet, Earth observation) proliferate</li>
-<li>Tourism and in-orbit servicing emerge</li>
-<li>Commercial space stations begin to compete with ISS</li>
-</ul>
-<h3>2040s–2050s</h3>
-<ul>
-<li>Orbital refueling becomes normalized</li>
-<li>Government-led colonization (Moon, Mars) peaks</li>
-<li>Commercial settlements and logistics take over</li>
-<li>Legal frameworks evolve to handle space real estate and labor</li>
-</ul>
-<h3>2060s–2080s</h3>
-<ul>
-<li>Asteroid mining begins in earnest</li>
-<li>Helium-3 fusion experiments for power back on Earth and space habitats</li>
-<li>Private infrastructure (solar arrays, manufacturing, comms) blooms in deep space</li>
-</ul>
-<h3>2090s–2100</h3>
-<ul>
-<li>Mass-scale orbital construction and trade hubs</li>
-<li>Emergence of a multi-planetary economy</li>
-<li>New economic doctrines and currencies arise to manage interplanetary trade</li>
-</ul>
-</section>
-<section>
-<p>Comprehensive Briefing: The Emerging Space Economy</p>
-<h1>1. Executive Summary</h1>
-<p>Space is entering a transformative era, shifting from a government-led domain to a commercially-driven frontier. Artificial Intelligence (AI) is accelerating this transition by enabling autonomous operations, lowering costs, and unlocking new business models. Between 2025 and 2060, critical AI technologies and strategic domains will reshape the economic landscape beyond Earth.</p>
-<h1>2. Foundational Mapping: Original Framework</h1>
-<p>The visual below represents the initial conceptual mapping of space activity transitioning from government to commercial leadership, alongside anticipated domain evolution—from satellite services and internet infrastructure to space mining and colonization.</p>
-</section></main>
-<script src="assets/app.js"></script>
+    <h1>The Emerging Space Economy</h1>
+    <p><em>AI, Commercialization, and Strategic Horizons</em></p>
+    <nav>
+        <a href="#section1">Executive Summary</a>
+        <a href="#section2">Narrative & Insights</a>
+        <a href="#section3">AI Products</a>
+        <a href="#section4">Trajectory</a>
+        <a href="#section5">AI Evolution</a>
+        <a href="#section6">Strategic Domains</a>
+        <a href="#section7">Zoomed Focus</a>
+        <a href="#section8">Implications</a>
+        <a href="#section9">Assumptions</a>
+        <a href="#section10">Next Steps</a>
+    </nav>
+<p>1. Executive Summary</p>
+<p>The global space economy is entering an inflection point-transitioning from a government-led arena into a commercially-driven frontier. Artificial Intelligence (AI) is the catalyst accelerating this transition. From autonomous navigation to predictive maintenance and space-based traffic management, AI technologies are transforming the economics, scalability, and operability of missions. Between 2025 and 2060, this convergence of AI and commercial capability will redefine Earth's relationship with orbit-and beyond.</p>
+<p>This report outlines the emerging strategic dynamics in space, identifies high-impact AI technologies, and presents investment-ready trajectories within space's evolving domains.</p>
+<p>---</p>
+<p>2. Strategic Narrative & Insights</p>
+<p>The history of economic transformation provides a useful lens: space today is where the internet was in the early 1990s, or where railroads stood in the late 1800s. Each began as a government-funded initiative to serve public goals-connect territory, build infrastructure, or secure dominance. Eventually, these sectors opened the door to commercial scale, competition, and wealth creation on unprecedented levels.</p>
+<p>We are now entering the "early broadband" phase of space: infrastructure is forming, commercial platforms (e.g., Starlink, Rocket Lab) are proving themselves, and markets are starting to scale.</p>
+<p>Three bottlenecks will define the coming decades:</p>
+<p>- Propellant transfer and orbital refueling</p>
+<p>- Launch cost reduction beyond low Earth orbit (LEO)</p>
+<p>- Long-duration human habitation and return systems</p>
+<p>- Legal frameworks for property, labor, and commerce off Earth</p>
+<p>Addressing these challenges through AI, automation, and modular infrastructure will determine leadership in the post-LEO space economy.</p>
+<p>---</p>
+<p>3. AI Products That Will Reshape the Space Market (2025-2050)</p>
+<p>AI is becoming the backbone of space operations. Key product categories include:</p>
+<p>- Mission Autonomy: Onboard decision-making, anomaly detection, and adaptive trajectory planning.</p>
+<p>- Launch Optimization: AI for predictive maintenance, smart payload integration, and real-time scheduling.</p>
+<p>- Surface Robotics: Terrain-aware systems for lunar construction, mining, and logistics.</p>
+<p>- Space Traffic Management: Autonomous deconfliction and orbital debris avoidance.</p>
+<p>- Resource Prospecting: AI-powered swarm scouts and spectral data analytics.</p>
+<p>- Cognitive Copilots: Natural language mission planners and diagnostics assistants for astronauts and mission control.</p>
+<p>These capabilities will shift missions from scripted sequences to adaptive, intelligent systems that continuously optimize based on real-time conditions.</p>
+<p>---</p>
+<p>4. Trajectory of Space Activity (1960-2100)</p>
+<p>From 1960 to 2000, government agencies led all space missions. The 2020s represent a turning point. Reusable rockets, private space stations, and mega-constellations signal commercial capability now rivaling public programs.</p>
+<p>By the 2040s:</p>
+<p>- Commercial firms will dominate launch frequency, infrastructure deployment, and surface operations.</p>
+<p>- Governments will refocus on regulatory, scientific, and military roles.</p>
+<p>By 2100:</p>
+<p>- A fully commercial space economy will include manufacturing, energy production, deep-space logistics, and asteroid mining.</p>
+<p>---</p>
+<p>5. AI Product Evolution Heatmap (2025-2050)</p>
+<p>Phase | Years | Focus | Maturity Window | Investment Signal</p>
+<p>------|-------|-------|-----------------|-------------------</p>
+<p>Foundational Autonomy | 2025-2030 | Flight control, anomaly detection, planning | Early stage | Fund mission control AI and satellite automation firms</p>
+<p>Operational Optimization | 2030-2038 | Maintenance, robotic servicing, launch logistics | Mid-stage | Invest in in-orbit logistics and autonomous support systems</p>
+<p>Environmental Adaptation | 2035-2045 | Terrain AI, radiation resilience, off-Earth robotics | High risk, high reward | Fund lunar/Martian surface autonomy and architecture startups</p>
+<p>Economic Orchestration | 2045-2055 | Orbital supply chains and manufacturing | Emerging | Support marketplaces and in-space supply logistics platforms</p>
+<p>Cognitive Integration | 2050+ | Language copilots, mission planning AI | Medium maturity | Fund neuro-symbolic AI and human-AI interface systems</p>
+<p>---</p>
+<p>6. Stacked Strategic Domains (2025-2100)</p>
+<p>Space does not evolve in isolation-it layers. Each domain enables the next:</p>
+<p>1. Orbital Services: Refueling, repositioning, debris management.</p>
+<p>2. Communications & Observation: Global internet, Earth analytics.</p>
+<p>3. Power Systems: Orbital solar arrays, beamed power.</p>
+<p>4. Lunar Infrastructure: Bases, landing pads, autonomous logistics.</p>
+<p>5. Resource Extraction: ISRU, helium-3, metals.</p>
+<p>6. Manufacturing & Settlement: Habitats, orbital construction, interplanetary trade.</p>
+<p>Lunar nodes will serve as economic hubs, offloading costs from Earth and catalyzing new industrial clusters.</p>
+<p>---</p>
+<p>7. Zoomed Strategic Domain Focus (2025-2060)</p>
+<p>2025-2035:</p>
+<p>- Expansion of LEO services</p>
+<p>- Proliferation of robotic lunar missions</p>
+<p>- Commercial stations and repair platforms</p>
+<p>2035-2055:</p>
+<p>- Orbital refueling standardizes</p>
+<p>- Lunar logistics depots form</p>
+<p>- Regolith-based construction and autonomous fabrication emerge</p>
+<p>Post-2055:</p>
+<p>- Lunar manufacturing and energy hubs</p>
+<p>- Permanent robotic and semi-human outposts</p>
+<p>- Economic routing from Moon to Mars and deep space</p>
+<p>---</p>
+<p>8. Strategic Implications</p>
+<p>- AI-first infrastructure will outperform manually managed systems</p>
+<p>- Legal frameworks will determine market leaders</p>
+<p>- Investment must be long-horizon (20+ years)</p>
+<p>- Modularity and autonomy are essential for resiliency and scale</p>
+<p>---</p>
+<p>9. Assumptions Behind the Forecasts</p>
+<p>- Government activity continues but shifts to oversight and science</p>
+<p>- Commercial activity grows exponentially due to lower costs and new demand</p>
+<p>- Regulations remain favorable to private actors</p>
+<p>- No major orbital warfare or debris cascade event</p>
+<p>- AI, robotics, and launch technologies evolve steadily through 2050</p>
+<p>---</p>
+<p>10. Next Steps and Recommendations</p>
+<p>1. Model Alternative Futures: Create simulation environments for different economic, policy, and technical outcomes.</p>
+<p>2. Track Competitive Domain Mapping: Continuously update actor capabilities by region and domain.</p>
+<p>3. Shape Governance: Influence space law and standards to ensure fair and scalable development.</p>
+<p>4. Integrate Space into Strategic Planning: Treat space infrastructure as the next macroeconomic pillar alongside energy and internet.</p></section>
+<hr><h2>Interactive Charts</h2>
+<h3>Trajectory of Space Activity</h3>
+<iframe src="chart_trajectory.html" width="100%" height="500" frameborder="0"></iframe>
+<h3>AI Product Evolution Heatmap</h3>
+<iframe src="chart_ai_evolution.html" width="100%" height="500" frameborder="0"></iframe>
+<h3>Stacked Strategic Domains</h3>
+<iframe src="chart_stacked_domains.html" width="100%" height="500" frameborder="0"></iframe>
+<h3>Zoomed Strategic Domain Focus</h3>
+<iframe src="chart_zoomed_focus.html" width="100%" height="500" frameborder="0"></iframe>
+<h3>AI Product Investment Phases</h3>
+<iframe src="chart_ai_phases.html" width="100%" height="500" frameborder="0"></iframe>
 </body>
 </html>
