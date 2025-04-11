@@ -2,201 +2,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .sticky-nav {
-            position: sticky;
-            top: 0;
-            background: #f9f9f9;
-            padding: 10px;
-            z-index: 1000;
-            border-bottom: 1px solid #ccc;
-        }
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #005EA2;
-            color: white;
-            padding: 10px 14px;
-            border: none;
-            border-radius: 4px;
-            font-size: 14px;
-            cursor: pointer;
-            display: none;
-        }
-    </style>
-    <script>
-        window.onscroll = function() {
-            const btn = document.getElementById("backToTop");
-            if (document.documentElement.scrollTop > 200) {
-                btn.style.display = "block";
-            } else {
-                btn.style.display = "none";
-            }
-        };
-        function scrollToTop() {
-            document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Emerging Space Economy</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 2rem; max-width: 800px; color: #222; }
-        h1, h2 { color: #005EA2; }
-        h1 { font-size: 2em; }
-        h2 { font-size: 1.4em; margin-top: 2rem; }
-        hr { border: none; border-top: 1px solid #ccc; margin: 2rem 0; }
-        nav { margin-bottom: 2rem; }
-        nav a { display: inline-block; margin-right: 15px; color: #0074D9; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-        section { margin-bottom: 3rem; }
-    </style>
-</head>
-<body>
-    <h1>The Emerging Space Economy</h1>
-    <p><em>AI, Commercialization, and Strategic Horizons</em></p>
-    <nav class="sticky-nav">
-    <style>
-        .nav-toggle { display: none; cursor: pointer; }
-        .nav-toggle-label { display: none; font-size: 20px; cursor: pointer; }
-        @media (max-width: 768px) {
-            .nav-toggle-label { display: block; }
-            nav a { display: block; margin: 10px 0; }
-            .nav-toggle:checked + .nav-links { display: block; }
-            .nav-links { display: none; }
-        }
-    </style>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-    <label for="nav-toggle" class="nav-toggle-label">☰ Menu</label>
-    <div class="nav-links">
-        <a href="#section1">Executive Summary</a>
-        <a href="#section2">Narrative & Insights</a>
-        <a href="#section3">AI Products</a>
-        <a href="#section4">Trajectory</a>
-        <a href="#section5">AI Evolution</a>
-        <a href="#section6">Strategic Domains</a>
-        <a href="#section7">Zoomed Focus</a>
-        <a href="#section8">Implications</a>
-        <a href="#section9">Assumptions</a>
-        <a href="#section10">Next Steps</a>
-    </div></nav>
-<p>1. Executive Summary</p>
-<p>The global space economy is entering an inflection point-transitioning from a government-led arena into a commercially-driven frontier. Artificial Intelligence (AI) is the catalyst accelerating this transition. From autonomous navigation to predictive maintenance and space-based traffic management, AI technologies are transforming the economics, scalability, and operability of missions. Between 2025 and 2060, this convergence of AI and commercial capability will redefine Earth's relationship with orbit-and beyond.</p>
-<p>This report outlines the emerging strategic dynamics in space, identifies high-impact AI technologies, and presents investment-ready trajectories within space's evolving domains.</p>
-<p>---</p>
-<p>2. Strategic Narrative & Insights</p>
-<p>The history of economic transformation provides a useful lens: space today is where the internet was in the early 1990s, or where railroads stood in the late 1800s. Each began as a government-funded initiative to serve public goals-connect territory, build infrastructure, or secure dominance. Eventually, these sectors opened the door to commercial scale, competition, and wealth creation on unprecedented levels.</p>
-<p>We are now entering the "early broadband" phase of space: infrastructure is forming, commercial platforms (e.g., Starlink, Rocket Lab) are proving themselves, and markets are starting to scale.</p>
-<p>Three bottlenecks will define the coming decades:</p>
-<p>- Propellant transfer and orbital refueling</p>
-<p>- Launch cost reduction beyond low Earth orbit (LEO)</p>
-<p>- Long-duration human habitation and return systems</p>
-<p>- Legal frameworks for property, labor, and commerce off Earth</p>
-<p>Addressing these challenges through AI, automation, and modular infrastructure will determine leadership in the post-LEO space economy.</p>
-<p>---</p>
-<p>3. AI Products That Will Reshape the Space Market (2025-2050)</p>
-<p>AI is becoming the backbone of space operations. Key product categories include:</p>
-<p>- Mission Autonomy: Onboard decision-making, anomaly detection, and adaptive trajectory planning.</p>
-<p>- Launch Optimization: AI for predictive maintenance, smart payload integration, and real-time scheduling.</p>
-<p>- Surface Robotics: Terrain-aware systems for lunar construction, mining, and logistics.</p>
-<p>- Space Traffic Management: Autonomous deconfliction and orbital debris avoidance.</p>
-<p>- Resource Prospecting: AI-powered swarm scouts and spectral data analytics.</p>
-<p>- Cognitive Copilots: Natural language mission planners and diagnostics assistants for astronauts and mission control.</p>
-<p>These capabilities will shift missions from scripted sequences to adaptive, intelligent systems that continuously optimize based on real-time conditions.</p>
-<p>---</p>
-<p>4. Trajectory of Space Activity (1960-2100)</p>
-<p>From 1960 to 2000, government agencies led all space missions. The 2020s represent a turning point. Reusable rockets, private space stations, and mega-constellations signal commercial capability now rivaling public programs.</p>
-<p>By the 2040s:</p>
-<p>- Commercial firms will dominate launch frequency, infrastructure deployment, and surface operations.</p>
-<p>- Governments will refocus on regulatory, scientific, and military roles.</p>
-<p>By 2100:</p>
-<p>- A fully commercial space economy will include manufacturing, energy production, deep-space logistics, and asteroid mining.</p>
-<p>---</p>
-<p>5. AI Product Evolution Heatmap (2025-2050)</p>
-<p>Phase | Years | Focus | Maturity Window | Investment Signal</p>
-<p>------|-------|-------|-----------------|-------------------</p>
-<p>Foundational Autonomy | 2025-2030 | Flight control, anomaly detection, planning | Early stage | Fund mission control AI and satellite automation firms</p>
-<p>Operational Optimization | 2030-2038 | Maintenance, robotic servicing, launch logistics | Mid-stage | Invest in in-orbit logistics and autonomous support systems</p>
-<p>Environmental Adaptation | 2035-2045 | Terrain AI, radiation resilience, off-Earth robotics | High risk, high reward | Fund lunar/Martian surface autonomy and architecture startups</p>
-<p>Economic Orchestration | 2045-2055 | Orbital supply chains and manufacturing | Emerging | Support marketplaces and in-space supply logistics platforms</p>
-<p>Cognitive Integration | 2050+ | Language copilots, mission planning AI | Medium maturity | Fund neuro-symbolic AI and human-AI interface systems</p>
-<p>---</p>
-<p>6. Stacked Strategic Domains (2025-2100)</p>
-<p>Space does not evolve in isolation-it layers. Each domain enables the next:</p>
-<p>1. Orbital Services: Refueling, repositioning, debris management.</p>
-<p>2. Communications & Observation: Global internet, Earth analytics.</p>
-<p>3. Power Systems: Orbital solar arrays, beamed power.</p>
-<p>4. Lunar Infrastructure: Bases, landing pads, autonomous logistics.</p>
-<p>5. Resource Extraction: ISRU, helium-3, metals.</p>
-<p>6. Manufacturing & Settlement: Habitats, orbital construction, interplanetary trade.</p>
-<p>Lunar nodes will serve as economic hubs, offloading costs from Earth and catalyzing new industrial clusters.</p>
-<p>---</p>
-<p>7. Zoomed Strategic Domain Focus (2025-2060)</p>
-<p>2025-2035:</p>
-<p>- Expansion of LEO services</p>
-<p>- Proliferation of robotic lunar missions</p>
-<p>- Commercial stations and repair platforms</p>
-<p>2035-2055:</p>
-<p>- Orbital refueling standardizes</p>
-<p>- Lunar logistics depots form</p>
-<p>- Regolith-based construction and autonomous fabrication emerge</p>
-<p>Post-2055:</p>
-<p>- Lunar manufacturing and energy hubs</p>
-<p>- Permanent robotic and semi-human outposts</p>
-<p>- Economic routing from Moon to Mars and deep space</p>
-<p>---</p>
-<p>8. Strategic Implications</p>
-<p>- AI-first infrastructure will outperform manually managed systems</p>
-<p>- Legal frameworks will determine market leaders</p>
-<p>- Investment must be long-horizon (20+ years)</p>
-<p>- Modularity and autonomy are essential for resiliency and scale</p>
-<p>---</p>
-<p>9. Assumptions Behind the Forecasts</p>
-<p>- Government activity continues but shifts to oversight and science</p>
-<p>- Commercial activity grows exponentially due to lower costs and new demand</p>
-<p>- Regulations remain favorable to private actors</p>
-<p>- No major orbital warfare or debris cascade event</p>
-<p>- AI, robotics, and launch technologies evolve steadily through 2050</p>
-<p>---</p>
-<p>10. Next Steps and Recommendations</p>
-<p>1. Model Alternative Futures: Create simulation environments for different economic, policy, and technical outcomes.</p>
-<p>2. Track Competitive Domain Mapping: Continuously update actor capabilities by region and domain.</p>
-<p>3. Shape Governance: Influence space law and standards to ensure fair and scalable development.</p>
-<p>4. Integrate Space into Strategic Planning: Treat space infrastructure as the next macroeconomic pillar alongside energy and internet.</p></section>
-<hr><h2>Interactive Charts</h2>
-<h3 id="chart-trajectory-of-space-activity">Trajectory of Space Activity</h3>
-<iframe src="chart_trajectory.html" width="100%" height="500" frameborder="0"></iframe>
-<h3 id="chart-ai-product-evolution-heatmap">AI Product Evolution Heatmap</h3>
-<iframe src="chart_ai_evolution.html" width="100%" height="500" frameborder="0"></iframe>
-<h3 id="chart-stacked-strategic-domains">Stacked Strategic Domains</h3>
-<iframe src="chart_stacked_domains.html" width="100%" height="500" frameborder="0"></iframe>
-<h3 id="chart-zoomed-strategic-domain-focus">Zoomed Strategic Domain Focus</h3>
-<iframe src="chart_zoomed_focus.html" width="100%" height="500" frameborder="0"></iframe>
-<h3 id="chart-ai-product-investment-phases">AI Product Investment Phases</h3>
-<iframe src="chart_ai_phases.html" width="100%" height="500" frameborder="0"></iframe>
-<button id="backToTop" class="back-to-top" onclick="scrollToTop()">Top</button>
-<hr><h2>Interactive Charts</h2>
-<h3 id="chart-trajectory-of-space-activity">Trajectory of Space Activity</h3>
-<iframe src="chart_trajectory.html" width="100%" height="500" frameborder="0"></iframe>
-<h3 id="chart-ai-product-evolution-heatmap">AI Product Evolution Heatmap</h3>
-<iframe src="chart_ai_evolution.html" width="100%" height="500" frameborder="0"></iframe>
-<h3 id="chart-stacked-strategic-domains">Stacked Strategic Domains</h3>
-<iframe src="chart_stacked_domains.html" width="100%" height="500" frameborder="0"></iframe>
-<h3 id="chart-zoomed-strategic-domain-focus">Zoomed Strategic Domain Focus</h3>
-<iframe src="chart_zoomed_focus.html" width="100%" height="500" frameborder="0"></iframe>
-<h3 id="chart-ai-product-investment-phases">AI Product Investment Phases</h3>
-<iframe src="chart_ai_phases.html" width="100%" height="500" frameborder="0"></iframe><button id="backToTop" class="back-to-top" onclick="scrollToTop()">Top</button>
-
+    
 <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 2rem; max-width: 800px; color: #222; }
+    h1, h2, h3 { color: #005EA2; }
+    .nav-container { position: sticky; top: 0; background: #f9f9f9; padding: 10px; z-index: 1000; border-bottom: 1px solid #ccc; }
+    .nav-container button { font-size: 18px; padding: 6px 12px; background: #005EA2; color: white; border: none; border-radius: 4px; }
+    .nav-links { display: none; flex-direction: column; margin-top: 10px; }
+    .nav-links a { margin: 5px 0; color: #0074D9; text-decoration: none; }
+    .nav-links a:hover { text-decoration: underline; }
+    .show-nav { display: flex !important; }
     .chart-section { transition: background-color 0.3s ease; }
     .chart-highlight { background-color: #e6f7ff !important; }
+    iframe.plotly-frame { width: 100%; min-height: 600px; border: none; }
+    @media (max-width: 600px) {
+        iframe.plotly-frame { min-height: 500px; }
+    }
+    .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #005EA2; color: white; padding: 10px 14px; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; display: none; }
 </style>
 <script>
+    function toggleNav() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("show-nav");
+    }
+
+    window.onscroll = function() {
+        const btn = document.getElementById("backToTop");
+        if (document.documentElement.scrollTop > 200) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+    function scrollToTop() {
+        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             const id = entry.target.getAttribute("id");
@@ -208,11 +53,74 @@
         });
     }, { threshold: 0.6 });
 
-    document.querySelectorAll("h3[id^='chart-']").forEach((section) => {
-        section.classList.add("chart-section");
-        observer.observe(section);
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("h3[id^='chart-']").forEach((section) => {
+            section.classList.add("chart-section");
+            observer.observe(section);
+        });
     });
 </script>
 
+</head>
+<body>
+    <h1>The Emerging Space Economy</h1>
+    <p><em>AI, Commercialization, and Strategic Horizons</em></p>
+    
+<div class="nav-container">
+    <button onclick="toggleNav()">☰ Menu</button>
+    <div class="nav-links" id="navLinks">
+        <a href="#chart-trajectory">Trajectory</a>
+        <a href="#chart-ai-product-evolution-heatmap">AI Heatmap</a>
+        <a href="#chart-stacked-strategic-domains">Domains</a>
+        <a href="#chart-zoomed-strategic-domain-focus">Zoomed</a>
+        <a href="#chart-ai-product-investment-phases">Investment</a>
+    </div>
+</div>
+
+    <hr />
+    <div>
+<h2>1. Executive Summary</h2>
+<p>The global space economy is entering an inflection point—transitioning from a government-led arena into a commercially-driven frontier. Artificial Intelligence (AI) is the catalyst accelerating this transition. From autonomous navigation to predictive maintenance and space-based traffic management, AI technologies are transforming the economics, scalability, and operability of missions.</p>
+
+<h2>2. Strategic Narrative & Insights</h2>
+<p>Space today mirrors past economic transformations: the internet in the 1990s, or railroads in the 1800s. Government agencies seeded exploration, but the next chapter belongs to scalable, competitive, commercial platforms.</p>
+
+<h2>3. AI Products That Will Reshape the Space Market</h2>
+<p>AI is becoming the backbone of space operations. These include onboard mission autonomy, launch logistics, surface robotics, traffic management, and cognitive copilots for crew support.</p>
+
+<h2>4. Trajectory of Space Activity (1960–2100)</h2>
+<p>As shown in the <a href="#chart-trajectory">Trajectory Chart</a>, commercial activity is projected to overtake government missions starting in the late 2020s.</p>
+
+<h2>5. AI Product Evolution Heatmap (2025–2050)</h2>
+<p>The <a href="#chart-ai-product-evolution-heatmap">AI Evolution Chart</a> maps phases from foundational autonomy to cognitive integration.</p>
+
+<h2>6. Stacked Strategic Domains</h2>
+<p>The <a href="#chart-stacked-strategic-domains">Strategic Domain Stack</a> shows how layers from comms to resource extraction build toward settlement.</p>
+
+<h2>7. Zoomed Strategic Domain Focus</h2>
+<p>For 2025–2060, the <a href="#chart-zoomed-strategic-domain-focus">Zoomed Forecast Chart</a> shows rapid acceleration in lunar infrastructure and robotics.</p>
+
+<h2>8. Strategic Implications</h2>
+<p>AI-first systems, modularity, and long-term investment horizons will define competitive advantage.</p>
+
+<h2>9. Assumptions Behind Forecasts</h2>
+<p>Forecasts assume regulatory support, steady tech advances, and commercial growth outpacing government capacity.</p>
+
+<h2>10. Next Steps and Recommendations</h2>
+<p>See the <a href="#chart-ai-product-investment-phases">Investment Phases Chart</a> for where to back mission control, surface systems, or orbital logistics platforms.</p>
+</div>
+    <hr />
+    <h2>Interactive Charts</h2>
+    <h3 id="chart-trajectory-of-space-activity">Trajectory of Space Activity</h3>
+<iframe src="chart_trajectory.html" class="plotly-frame"></iframe>
+<h3 id="chart-ai-product-evolution-heatmap">AI Product Evolution Heatmap</h3>
+<iframe src="chart_ai_evolution.html" class="plotly-frame"></iframe>
+<h3 id="chart-stacked-strategic-domains">Stacked Strategic Domains</h3>
+<iframe src="chart_stacked_domains.html" class="plotly-frame"></iframe>
+<h3 id="chart-zoomed-strategic-domain-focus">Zoomed Strategic Domain Focus</h3>
+<iframe src="chart_zoomed_focus.html" class="plotly-frame"></iframe>
+<h3 id="chart-ai-product-investment-phases">AI Product Investment Phases</h3>
+<iframe src="chart_ai_phases.html" class="plotly-frame"></iframe>
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">Top</button>
 </body>
 </html>
